@@ -14,7 +14,7 @@ for handle in all_handles:
 		browser.switch_to.window(handle)
 		browser.switch_to.frame('ptlogin_iframe')       # 需先跳转到frame框架!!
 		browser.find_element_by_id('switcher_plogin').click()
-		browser.find_element_by_id('u').send_keys('*********')
-		browser.find_element_by_id('p').send_keys('*********')
+		browser.find_element_by_id('u').send_keys('*********')	# 帐号
+		browser.find_element_by_id('p').send_keys('*********')	# 密码
 		browser.find_element_by_id('login_button').click()
 browser.switch_to.window(cur_handle)
